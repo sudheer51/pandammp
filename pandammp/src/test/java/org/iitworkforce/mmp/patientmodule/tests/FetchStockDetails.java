@@ -1,10 +1,10 @@
 package org.iitworkforce.mmp.patientmodule.tests;
 
+ 
 import org.iitworkforce.mmp.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FetchStockDetails extends BaseClass{
 
@@ -13,8 +13,6 @@ public class FetchStockDetails extends BaseClass{
 	public static void main(String[] args) 
 	{
 		 
-		  
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("https://money.rediff.com/gainers");
 		FetchStockDetails fsh = new FetchStockDetails();
