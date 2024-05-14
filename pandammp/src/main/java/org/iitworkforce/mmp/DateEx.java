@@ -11,7 +11,7 @@ public class DateEx {
 		AgeDifference ageDiff = new AgeDifference();
 		System.out.println(ageDiff.defaultVar);
 		
-		String output = getFutureDate(10,"MM/dd/YYYY");
+		String output = getFutureDate(20,"MM/d/YYYY");
 		System.out.println(output);
 		String expectedArr[]=output.split("/");
 		System.out.println("Expected Month " + expectedArr[0]);
