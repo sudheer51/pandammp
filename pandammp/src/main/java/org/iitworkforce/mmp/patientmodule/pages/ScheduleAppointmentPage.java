@@ -44,7 +44,7 @@ public class ScheduleAppointmentPage {
 
 		driver.switchTo().frame("myframe");
 		driver.findElement(By.id("datepicker")).click();
-		String expectedArr[] = DateEx.getFutureDate(noofDays, "MMMM/dd/YYYY").split("/");
+		String expectedArr[] = DateEx.getFutureDate(noofDays, "MMMM/d/YYYY").split("/");
 		String expectedMonth=expectedArr[0];
 		String expectedDay=expectedArr[1];
 		String expectedYear=expectedArr[2];
