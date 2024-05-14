@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Sanity Check') {
+            steps {
+              bat '''ping 96.84.175.78 -n 5
+                     dir
+                     cd ..
+                    '''
+            }
+        }
+         stage('Trigger MMP Tests via Maven') {
+            steps {
+                git branch: 'main', url: 'https://github.com/sudheer51/pandammp.git'
+                dir('pandammp')
+                {
+                           bat 'mvn clean test'
+                }
+            }
+        }
+    }
+}
