@@ -15,9 +15,9 @@ public class ScheduleAppointmentPage {
 	
 	WebDriver driver;
 	private By dateXpath = By.xpath("//table[@class='table']/tbody/tr[1]/td[1]");
-	private By timeXpath = By.xpath("By.xpath(\"//table[@class='table']/tbody/tr[1]/td[2]\")");
-	private By symPath = By.xpath("By.xpath(\"//table[@class='table']/tbody/tr[1]/td[3]\")");
-	private By doctorXpath = By.xpath("By.xpath(\"//table[@class='table']/tbody/tr[1]/td[4]\")");
+	private By timeXpath = By.xpath("By.xpath("//table[@class='table']/tbody/tr[1]/td[2]")");
+	private By symPath = By.xpath("By.xpath("//table[@class='table']/tbody/tr[1]/td[3]")");
+	private By doctorXpath = By.xpath("By.xpath("//table[@class='table']/tbody/tr[1]/td[4]")");
 	private By createNewButtonXpath = By.xpath("//input[@value='Create new appointment']");
 	
 	public ScheduleAppointmentPage(WebDriver driver)
