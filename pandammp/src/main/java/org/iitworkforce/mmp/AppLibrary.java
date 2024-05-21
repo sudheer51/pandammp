@@ -22,6 +22,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -150,19 +152,22 @@ public class AppLibrary {
 
 		String data[][]= new String[rows][cols];
 		int i=0;
-		rs.first();
+		rs.beforeFirst();
+		System.out.println(rs.getMetaData());
+		
 		while(rs.next())
 		{
 			for(int j=0;j<cols;j++)
 			{
 
 				data[i][j]=rs.getString(j+1);
-				System.out.println(data[i][j]);
-				System.out.println("i :::"  + i +"@@@@"+"j:::::" + j);
+				System.out.print(data[i][j]+"--");
+				System.out.print("i :::"  + i +"@@@@"+"j:::::" + j);
 
 			}
+			System.out.println();
 			i++;
-		}	
+		} 
 		return data;
 	}
 
