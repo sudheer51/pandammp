@@ -153,7 +153,7 @@ public class AppLibrary {
 		String data[][]= new String[rows][cols];
 		int i=0;
 		rs.beforeFirst();
-		System.out.println(rs.getMetaData());
+		///System.out.println(rs.getMetaData());
 		
 		while(rs.next())
 		{
@@ -169,6 +169,16 @@ public class AppLibrary {
 			i++;
 		} 
 		return data;
+	}
+	public static String getFutureDate(int noofdays,String format)
+	{
+
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.DAY_OF_MONTH, noofdays);
+		Date d = cal.getTime();
+		SimpleDateFormat sdf = new SimpleDateFormat(format);
+		String expected = sdf.format(d);
+		return expected;
 	}
 
 

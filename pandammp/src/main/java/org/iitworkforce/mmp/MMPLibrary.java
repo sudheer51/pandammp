@@ -15,7 +15,7 @@ public class MMPLibrary {
 		//login
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
-		driver.findElement(By.name("submit")).click();
+		driver.findElement(By.xpath("//input[@value='Sign In']")).click();
 	}
 	public String fetchLoginSuccessfulMsg()
 	{
@@ -24,6 +24,10 @@ public class MMPLibrary {
 	public void navigateTo(String moduleName)
 	{
 		driver.findElement(By.xpath("//span[normalize-space()='"+moduleName+"']")).click();
+	}
+	public void launchApplication(String url)
+	{
+		driver.get(url);
 	}
 
 
