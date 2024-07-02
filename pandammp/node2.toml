@@ -1,0 +1,4 @@
+[[node.driver-configuration]]
+display-name = "Regression Status"
+max-sessions = 2
+stereotype = "{\"browserName\": \"chrome\", \"browserVersion\": \"86\" }"

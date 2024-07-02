@@ -10,8 +10,10 @@ import org.testng.annotations.Test;
 
 public class AdminPatientViewInfoTests extends BaseClass {
 
-
-	@Test
+ /**
+  * Objective: 
+  */
+	@Test(description="validate the patient data displayed in the Admin module")
 	public void validateViewPatientData()
 	{
 

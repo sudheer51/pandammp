@@ -8,6 +8,7 @@ import org.iitworkforce.mmp.MMPLibrary;
 import org.iitworkforce.mmp.adminmodule.pages.SendMessagesAdminPage;
 import org.iitworkforce.mmp.patientmodule.pages.EditProfilePage;
 import org.iitworkforce.mmp.patientmodule.pages.SendMessagesPatientPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SendMessagesE2ETests extends BaseClass {
@@ -37,6 +38,8 @@ public class SendMessagesE2ETests extends BaseClass {
 		SendMessagesAdminPage adminPage = new SendMessagesAdminPage(driver);
 		HashMap<String,String> actualHMap = adminPage.fetchMessageDetails();
 		System.out.println("#########################################Actual HashMap"+ actualHMap);
+		
+		Assert.assertEquals(actualHMap, expectedHMap);
  
 	}
 
