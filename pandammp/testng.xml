@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test" parallel="methods"> 
  
     <classes>
-      <class name="org.iitworkforce.mmp.patientmodule.tests.TestNGParalellTests"/>
+      <class name="org.iitworkforce.mmp.patientmodule.tests.GridExampleConfig"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

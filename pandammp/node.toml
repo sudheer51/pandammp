@@ -1,0 +1,6 @@
+[node]
+detect-drivers = false
+[[node.driver-configuration]]
+display-name = "checking"
+max-sessions = 2
+stereotype = "{\"browserName\": \"chrome\", \"browserVersion\": \"113\" }"

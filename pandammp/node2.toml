@@ -1,4 +1,6 @@
+[node]
+detect-drivers = false
 [[node.driver-configuration]]
-display-name = "Regression Status"
+display-name = "checking123"
 max-sessions = 2
-stereotype = "{\"browserName\": \"chrome\", \"browserVersion\": \"86\" }"
+stereotype = "{\"browserName\": \"MicrosoftEdge\", \"browserVersion\": \"126\" }"
