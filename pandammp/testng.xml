@@ -7,4 +7,5 @@
       <class name="org.iitworkforce.mmp.patientmodule.tests.GridExampleConfig"/>
     </classes>
   </test> <!-- Test -->
+  
 </suite> <!-- Suite -->
